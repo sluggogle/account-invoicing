@@ -8,7 +8,6 @@ from odoo import api, models
 class AccountInvoice(models.Model):
     _inherit = "account.invoice"
 
-    @api.multi
     def action_view_payments(self):
         """
         This function returns an action that display existing payments of given

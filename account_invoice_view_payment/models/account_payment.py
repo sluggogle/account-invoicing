@@ -8,7 +8,6 @@ from odoo import api, models, _
 class AccountPayment(models.Model):
     _inherit = "account.payment"
 
-    @api.multi
     def post_and_open_payment(self):
         self.post()
         res = {

@@ -8,7 +8,6 @@ from odoo import api, models, _
 class AccountRegisterPayments(models.TransientModel):
     _inherit = "account.register.payments"
 
-    @api.multi
     def create_payment_and_open(self):
         payment_model = self.env['account.payment']
         payments = payment_model
